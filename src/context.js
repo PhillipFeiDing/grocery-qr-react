@@ -89,7 +89,7 @@ class ProductProvider extends Component {
         const selectedProduct = tempCart.find(item => item.id === id)
         const index = tempCart.indexOf(selectedProduct)
         const product = tempCart[index]
-        console.log(product)
+        // console.log(product)
         product.count = product.count - 1
         product.total = product.count * product.price;
         if (product.count === 0) {

@@ -8,6 +8,7 @@ import ProductList from './Components/ProductList'
 import Details from './Components/Details'
 import Default from './Components/Default'
 import Cart from './Components/Cart'
+import Checkout from './Components/Checkout'
 import Model from './Components/Model'
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path='/' exact component={ProductList}></Route>
           <Route path='/details' exact component={Details}></Route>
           <Route path='/Cart' exact component={Cart}></Route>
+          <Route path='/checkout' exact component={Checkout}></Route>
           <Route  component={Default}></Route>
         </Switch>
         <Model />

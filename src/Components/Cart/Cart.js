@@ -12,7 +12,7 @@ export default class Cart extends Component {
            <section>
                <ProductConsumer>
                 {value => {if (value.cart.length === 0) {
-                    return(<EmptyCart />)
+                    return(<EmptyCart value = {value}/>)
                 } else {
                     return (<React.Fragment>
                                 <Title name = "your" title="cart" />
